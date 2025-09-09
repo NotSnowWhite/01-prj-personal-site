@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+    <header>
+        <div class="intro-section">
+            <img src="img/Gabi.jpg" alt="Profile Picture" class="profile-pic">
+            <div>
+                <h1>Hi, I'm Gabi!</h1>
+                <h2 class="intro-text">Designer & Developer </h2>
+                <p class="intro-text"> Dedicated to delivering creative, high-quality solutions.</p>
+            </div>
+        </div>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <!-- Each button links to a section on the page -->
+            <a class="nav-btn" href="#about">About</a>
+            <a class="nav-btn" href="#skills">Skills</a>
+            <a class="nav-btn" href="#projects">Projects</a>
+            <a class="nav-btn" href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id= about class="about-section">
+            <h2>About Me</h2>
+            <p>I'm a passionate developer and designer focused on building immersive, high-quality digital experiences. As an undergraduate at ASU, I love blending creativity with technology and have hands-on experience in HTML, CSS, JavaScript, PostgreSQL, the MERN stack, and AI. I'm always eager to learn, grow, and take on new challenges in the world of tech and design.</p>
+        </section>
+        <section id= skills class="skills-section">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+                <li>Skill 3</li>
+                <li>Skill 4</li>
+            </ul>
+        </section>
+        <section id= projects class="links-section">
+            <h2>Professional Links</h2>
+            <ul class="links-list">
+                <li><a href="https://www.linkedin.com/in/gabrielle-latch" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.github.com/NotSnowWhite" target="_blank">GitHub</a></li>
+                <li><a href="#" target="_blank">Portfolio Website</a></li>
+            </ul>
+        </section>
+        <section id= contact class="contact-section">
+            <h2>Contact Information</h2>
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:gflatch@att.net">gflatch@att.net</a></li>
+                <li>Phone: (972) 261-8387</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Gabrielle F. Latch</p>
+    </footer>
 </body>
 </html>
