@@ -1,9 +1,19 @@
+/* Remove underline and blue color from all links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Navigation Bar Styles */
 .navbar {
-  display: flex; /* Makes the buttons horizontal */
-  justify-content: center; /* Center the buttons */
-  gap: 16px; /* Space between buttons */
-  margin: 24px 0; /* Space above and below nav bar */
+  display: flex;
+  /* Makes the buttons horizontal */
+  justify-content: center;
+  /* Center the buttons */
+  gap: 16px;
+  /* Space between buttons */
+  margin: 24px 0;
+  /* Space above and below nav bar */
 }
 
 
@@ -11,10 +21,12 @@
 .nav-btn {
   display: inline-block;
   padding: 10px 24px;
-  background: linear-gradient(90deg, #a259c6 0%, #f06292 100%); /* Purple to pink */
+  background: linear-gradient(90deg, #a259c6 60%, #f06292 100%);
+  /* Purple to pink */
   color: white;
   text-decoration: none;
-  border-radius: 24px; /* Makes the buttons round */
+  border-radius: 24px;
+  /* Makes the buttons round */
   font-size: 16px;
   border: none;
   transition: background 0.2s, box-shadow 0.2s;
@@ -24,22 +36,30 @@
 
 /* On hover, make the gradient a bit brighter and add a glow */
 .nav-btn:hover {
-  background: linear-gradient(90deg, #b47ddb 0%, #ff80ab 100%); /* Lighter purple to pink */
+  background: linear-gradient(90deg, #b47ddb 0%, #ff80ab 100%);
+  /* Lighter purple to pink */
   box-shadow: 0 4px 16px rgba(240, 98, 146, 0.18);
 }
+
 /* Add you CSS here */
 /* Center all h2 headings */
 h2 {
   text-align: center;
 }
+
 /* Dark mode CSS boilerplate */
 :root {
-  --bg-color: #23213a;         /* deep indigo */
-  --text-color: #e6e0f8;       /* soft light lavender */
-  --header-bg: #2d254c;        /* dark purple */
-  --accent: #a084ca;           /* medium purple */
+  --bg-color: #23213a;
+  /* deep indigo */
+  --text-color: #e6e0f8;
+  /* soft light lavender */
+  --header-bg: #2d254c;
+  /* dark purple */
+  --accent: #a084ca;
+  /* medium purple */
   --section-bg: #312c48;
-  --hydrangea-pink: #e6b3d1;   /* matching pink */
+  --hydrangea-pink: #e6b3d1;
+  /* matching pink */
 }
 
 body {
@@ -55,7 +75,7 @@ header {
   background: var(--header-bg);
   padding: 2.5rem 1rem 1.5rem 1rem;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .intro-section {
@@ -70,16 +90,14 @@ header {
   text-align: center;
 }
 
- .profile-pic {
+.profile-pic {
   width: 138px;
   height: 200px;
-  /* width: 150px;
-  height: 150px; */
   border-radius: 50%;
   border: 3px solid var(--accent);
   object-fit: cover;
   object-position: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
@@ -103,7 +121,7 @@ section {
   border-radius: 8px;
   padding: 1.5rem;
   margin-bottom: 2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -116,15 +134,17 @@ section {
 .skills-section {
   text-align: center;
 }
+
 .skills-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
   list-style: none;
   padding: 0;
   margin: 1rem 0 0 0;
+
 }
+
 .skills-list li {
   background: #181a1b;
   color: var(--accent);
@@ -132,7 +152,22 @@ section {
   border-radius: 20px;
   font-weight: 500;
   font-size: 1rem;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  /* stack icon on top of text */
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  /* object-fit: cover;
+  object-position: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); */
 }
 
 .links-section ul {
@@ -143,12 +178,14 @@ section {
   justify-content: center;
   margin: 1rem 0 0 0;
 }
+
 .links-list a {
   color: var(--accent);
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s;
 }
+
 .links-list a:hover {
   color: #a3bffa;
 }
@@ -159,6 +196,7 @@ section {
   margin: 1rem 0 0 0;
   text-align: center;
 }
+
 .contact-list li {
   margin-bottom: 0.5rem;
   color: #bfc7d5;
